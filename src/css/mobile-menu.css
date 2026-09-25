@@ -135,7 +135,7 @@
   background-color: #e6d357;
 }
 
-body.menu-open {
+body.scroll-locked {
   overflow: hidden;
 }
 
