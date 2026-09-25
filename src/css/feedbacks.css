@@ -13,23 +13,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
-}
-
-.feedbacks-decor {
-  width: 170px;
-  height: 25px;
-
-  margin: 0 auto 24px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .feedbacks-decor-icon {
-  width: 170px;
-  height: 25px;
+  width: 300px;
+  height: 21px;
 
   fill: currentColor;
   stroke: currentColor;
@@ -46,13 +34,13 @@
   font-family: Georgia, 'Times New Roman', serif;
   font-size: 30px;
   font-weight: 400;
-  line-height: 1.15;
+  line-height: 1.2;
 }
 
 .feedbacks-description {
   max-width: 350px;
 
-  margin: 24px auto 48px;
+  margin: 24px auto 40px;
 
   text-align: center;
 
@@ -174,13 +162,13 @@
 }
 
 .feedbacks-button {
-  width: 53px;
-  height: 53px;
+  width: 48px;
+  height: 48px;
 
   padding: 0;
 
   border: 2px solid #111;
-  border-radius: 5px;
+  border-radius: 4px;
 
   background-color: #faf8ef;
   color: #111;
