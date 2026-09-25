@@ -11,23 +11,6 @@
 
 .header-logo {
   display: block;
-  border-radius: 6px;
-
-  --color1: #b09a0c;
-  --color2: #fff;
-  --color3: #000;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-logo:hover,
-.header-logo:focus {
-  background-color: rgba(0, 0, 0, 0.15);
-}
-
-.header-logo:active {
-  background-color: transparent;
-  --color2: #b09a0c;
-  --color3: #b09a0c;
 }
 
 .header-logo-icon {
@@ -90,7 +73,7 @@
   .header-nav-link {
     display: block;
     border-radius: 6px;
-    padding: 8px 6px;
+    padding: 0 6px;
 
     font-family: var(--font-main);
     font-weight: 400;
@@ -137,12 +120,10 @@
 
   .header-book-btn:hover,
   .header-book-btn:focus {
-    border-width: 2px;
     background-color: transparent;
   }
 
   .header-book-btn:active {
-    border-width: 2px;
     box-shadow:
       inset 0 2px 4px -2px rgba(0, 0, 0, 0.06),
       inset 0 4px 8px -2px rgba(0, 0, 0, 0.1);
