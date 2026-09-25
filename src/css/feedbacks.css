@@ -1,13 +1,10 @@
 .feedbacks {
-  background-color: #faf8ef;
   color: #111;
   overflow: hidden;
+  padding: 64px 0;
 }
 
 .feedbacks-decor {
-  width: 170px;
-  height: 25px;
-
   margin: 0 auto 24px;
 
   display: flex;
@@ -22,7 +19,6 @@
   fill: currentColor;
   stroke: currentColor;
 }
-
 
 .feedbacks-title {
   max-width: 340px;
@@ -47,7 +43,6 @@
   font-size: 16px;
   line-height: 1.5;
 }
-
 
 .feedbacks-slider {
   width: 100%;
@@ -86,7 +81,6 @@
   padding: 0 5px;
 }
 
-
 .feedbacks-card {
   min-height: 365px;
 
@@ -115,7 +109,6 @@
   font-size: 14px;
 }
 
-
 .feedbacks-bottom {
   width: 100%;
 
@@ -125,7 +118,6 @@
   align-items: center;
   justify-content: space-between;
 }
-
 
 .feedbacks-dots {
   display: flex;
@@ -154,7 +146,6 @@
 .feedbacks-dot.is-active {
   opacity: 1;
 }
-
 
 .feedbacks-buttons {
   display: flex;
@@ -193,19 +184,16 @@
   stroke: currentColor;
 }
 
-
 .feedbacks-button:hover:not(:disabled) {
   border-color: #b09a0c;
   background-color: #faf8ef;
   color: #111;
 }
 
-
 .feedbacks-button:focus-visible {
   outline: none;
   border-color: #b09a0c;
 }
-
 
 .feedbacks-button:active:not(:disabled) {
   border-color: #b09a0c;
