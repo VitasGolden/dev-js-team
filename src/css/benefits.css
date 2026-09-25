@@ -130,10 +130,12 @@
     margin-top: 110px;
   }
 
-  .benefit-card__icon {
-    width: 100px;
-    height: 100px;
-    margin-bottom: 40px;
+  .benefit-card__icon svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    fill: none;
+    stroke: currentColor;
   }
 
   .benefit-card__title {
