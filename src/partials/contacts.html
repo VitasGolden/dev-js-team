@@ -2,7 +2,7 @@
   <div class="container">
     <div class="contacts-content">
       <svg class="icon icon-divider">
-        <use href="../img/sprite.svg#icon-divider"></use>
+        <use href="/images/sprite.svg#icon-divider"></use>
       </svg>
       <div class="title-container">
         <h2 class="section-title">Let's Tell Your Story</h2>
@@ -15,24 +15,24 @@
       <div class="contact-container">
         <ul class="contact-list">
           <li class="contact-item">
-            <svg class="icon icon-marking" width="24" height="24">
-              <use href="../img/sprite.svg#icon-mail"></use>
+            <svg class="icon-contacts icon-mail" width="24" height="24">
+              <use href="/images/sprite.svg#icon-mail"></use>
             </svg>
             <a href="mailto:info@mariakovalenko.com" class="contact-link"
               >info@mariakovalenko.com</a
             >
           </li>
           <li class="contact-item">
-            <svg class="icon icon-marking" width="24" height="24">
-              <use href="../img/sprite.svg#icon-phone"></use>
+            <svg class="icon-contacts icon-phone" width="24" height="24">
+              <use href="/images/sprite.svg#icon-phone"></use>
             </svg>
             <a href="tel:+405551234567" class="contact-link"
               >+40 (555) 123-4567</a
             >
           </li>
           <li class="contact-item">
-            <svg class="icon icon-marking" width="24" height="24">
-              <use href="../img/sprite.svg#icon-marking"></use>
+            <svg class="icon-contacts icon-marking" width="24" height="24">
+              <use href="/images/sprite.svg#icon-marking"></use>
             </svg>
             <a
               href="https://maps.app.goo.gl/PdNouuhEWRpiAxCK6"
@@ -46,36 +46,47 @@
         </ul>
       </div>
     </div>
-    <form>
-      <label>
-        <p>Name*</p>
-        <input
-          autocomplete="off"
-          type="text"
-          name="name"
-          placeholder="Enter your name"
-          required
-        />
-      </label>
-      <label>
-        <p>Phone*</p>
-        <input
-          autocomplete="off"
-          type="tel"
-          name="tel"
-          placeholder="Enter your phone number"
-          required
-        />
-      </label>
-      <label>
-        <p>Message</p>
-        <textarea
-          name="message"
-          id="message"
-          placeholder="Tell me a little about you and your special day. Don't forget to include your wedding date, venue, and what you're most excited about..."
-        ></textarea>
-      </label>
-      <button type="submit">Let's Talk</button>
-    </form>
+    <div class="form-container">
+      <form>
+        <label>
+          <p class="label-title">Name*</p>
+          <div class="input-container">
+            <input
+              autocomplete="off"
+              type="text"
+              name="name"
+              placeholder="Enter your name"
+              required
+              class="contact-input"
+            />
+          </div>
+        </label>
+        <label>
+          <p class="label-title">Phone*</p>
+          <div class="input-container">
+            <input
+              autocomplete="off"
+              type="tel"
+              name="tel"
+              placeholder="Enter your phone number"
+              required
+              class="contact-input"
+            />
+          </div>
+        </label>
+        <label>
+          <p class="label-title">Message</p>
+          <div class="textarea-container">
+            <textarea
+              name="message"
+              id="message"
+              placeholder="Tell me a little about you and your special day. Don't forget to include your wedding date, venue, and what you're most excited about..."
+              class="contact-textarea"
+            ></textarea>
+          </div>
+        </label>
+        <button type="submit" class="submit-button">Let's Talk</button>
+      </form>
+    </div>
   </div>
 </section>
