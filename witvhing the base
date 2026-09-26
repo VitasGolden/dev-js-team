@@ -1,8 +1,0 @@
-[33m59e7e83[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mfeat/hero[m[33m, [m[1;31morigin/feat/hero[m[33m)[m hero and about section
-[33md773a84[m[33m ([m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m, [m[1;32mmain[m[33m)[m Merge pull request #2 from VitasGolden/feature/setup-fonts
-[33m1d56252[m Added fonts
-[33m1da3272[m Merge pull request #1 from VitasGolden/partials
-[33mf1a8090[m add loads to index
-[33mafc971a[m initial commit
-[33m39a12e4[m Update build script base path in package.json
-[33m8d51367[m Initial commit
