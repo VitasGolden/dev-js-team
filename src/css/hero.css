@@ -16,13 +16,13 @@
   background-image:
     linear-gradient(to bottom, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.66)),
     image-set(
-      url('../images/hero-1x.webp') 1x,
-      url('../images/hero-2x.webp') 2x
+      url('../images/hero-phone-1x.webp') 1x,
+      url('../images/hero-phone-2x.webp') 2x
     );
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  color: #ffffff;
+  color: rgba(255, 255, 255, 1);
 }
 
 .hero-content {
@@ -43,7 +43,7 @@
   font-size: 40px;
   line-height: 1.2;
   font-weight: 400;
-  color: #ffffff;
+  color: rgba(255, 255, 255, 1);
   letter-spacing: -0.01em;
   margin-bottom: 24px;
 }
@@ -52,7 +52,7 @@
   font-size: 18px;
   line-height: 1.5;
   font-weight: 400;
-  color: #ffffff;
+  color: rgba(255, 255, 255, 1);
 }
 
 .hero-btn {
@@ -62,8 +62,8 @@
   width: 100%;
   padding: 10px 92px;
   border-radius: 6px;
-  background-color: #ffffff;
-  color: #000000;
+  background-color: rgba(255, 255, 255, 1);
+  color: rgba(0, 0, 0, 1);
   text-decoration: none;
   font-size: 16px;
   font-weight: 500;
@@ -75,6 +75,31 @@
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.hero-btn:hover,
+.hero-btn:focus-visible {
+  background-color: #ffffff;
+  border-color: rgba(220, 193, 16, 1);
+  border: 1px solid rgba(220, 193, 16, 1);
+  color: rgba(0, 0, 0, 1);
+  outline: none;
+}
+
+.hero-btn:active {
+  background-color: rgba(230, 211, 87, 1);
+  border: 1px solid rgba(220, 193, 16, 1);
+  border-color: transparent;
+  color: #000000;
+}
+
+.hero-btn:disabled,
+.hero-btn[aria-disabled='true'] {
+  background-color: #eee0b0;
+  border-color: transparent;
+  color: #bbb08a;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
 @media screen and (min-width: 768px) {
   .hero {
     max-width: 768px;
@@ -82,6 +107,12 @@
   }
 
   .hero-container {
+    background-image:
+      linear-gradient(to bottom, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.66)),
+      image-set(
+        url('../images/hero-tablet-1x.webp') 1x,
+        url('../images/hero-tablet-2x.webp') 2x
+      );
     max-width: 704px;
     padding: 122px 32px 32px 32px;
     border-radius: 24px;
@@ -102,6 +133,7 @@
 
   .hero-btn {
     background-color: rgba(220, 193, 16, 1);
+    border: 1px solid rgba(220, 193, 16, 1);
     color: #000000;
     width: fit-content;
     padding: 10px 24px;
@@ -116,6 +148,12 @@
   }
 
   .hero-container {
+    background-image:
+      linear-gradient(to bottom, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.66)),
+      image-set(
+        url('../images/hero-desktop-1x.webp') 1x,
+        url('../images/hero-desktop-2x.webp') 2x
+      );
     max-width: 1312px;
     padding: 458px 64px 32px 64px;
   }

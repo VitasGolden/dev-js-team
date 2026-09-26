@@ -24,7 +24,7 @@
   line-height: 1.2;
   font-weight: 400;
   letter-spacing: -0.01em;
-  color: #1a1a1a;
+  color: rgba(0, 0, 0, 1);
   margin-bottom: 24px;
 }
 
@@ -40,7 +40,6 @@
   display: block;
   width: 100%;
   height: auto;
-  aspect-ratio: 4 / 3;
   object-fit: cover;
   object-position: center;
   margin: 0 auto;
@@ -80,9 +79,5 @@
 
   .about-text {
     max-width: 779px;
-  }
-
-  .about-img {
-    aspect-ratio: 16 / 8;
   }
 }

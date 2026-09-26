@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="/src/css/about.css" />
   </head>
   <body>
-    <section class="about">
+    <section class="about container">
       <div class="about-container">
         <svg class="divider_icon" aria-hidden="true">
           <use href="img/sprite.svg/icon-divider"></use>
@@ -22,12 +22,33 @@
           blends artistry with a personal touch, ensuring that each couple's
           story is told through stunning imagery.
         </p>
-        <img
-          class="about-img"
-          src="../images/about-1x.webp"
-          srcset="../images/about-2x.webp 2x"
-          alt="about"
-        />
+        <picture>
+          <source
+            media="(min-width: 1440px)"
+            srcset="
+              ../images/about-desktop-1x.webp 1x,
+              ../images/about-desktop-2x.webp 2x
+            "
+          />
+          <source
+            media="(min-width: 768px)"
+            srcset="
+              ../images/about-tablet-1x.webp 1x,
+              ../images/about-tablet-2x.webp 2x
+            "
+          />
+          <source
+            srcset="
+              ../images/about-phone-1x.webp 1x,
+              ../images/about-phone-2x.webp 2x
+            "
+          />
+          <img
+            class="about-img"
+            src="../images/about-phone-1x.webp"
+            alt="Maria Kovalenko"
+          />
+        </picture>
       </div>
     </section>
   </body>
