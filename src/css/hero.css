@@ -16,8 +16,8 @@
   background-image:
     linear-gradient(to bottom, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.66)),
     image-set(
-      url('../images/hero-phone-1x.webp') 1x,
-      url('../images/hero-phone-2x.webp') 2x
+      url('/images/hero-phone-1x.webp') 1x,
+      url('/images/hero-phone-2x.webp') 2x
     );
   background-size: cover;
   background-position: center;
@@ -110,8 +110,8 @@
     background-image:
       linear-gradient(to bottom, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.66)),
       image-set(
-        url('../images/hero-tablet-1x.webp') 1x,
-        url('../images/hero-tablet-2x.webp') 2x
+        url('/images/hero-tablet-1x.webp') 1x,
+        url('/images/hero-tablet-2x.webp') 2x
       );
     max-width: 704px;
     padding: 122px 32px 32px 32px;
@@ -151,8 +151,8 @@
     background-image:
       linear-gradient(to bottom, rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.66)),
       image-set(
-        url('../images/hero-desktop-1x.webp') 1x,
-        url('../images/hero-desktop-2x.webp') 2x
+        url('/images/hero-desktop-1x.webp') 1x,
+        url('/images/hero-desktop-2x.webp') 2x
       );
     max-width: 1312px;
     padding: 458px 64px 32px 64px;
