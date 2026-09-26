@@ -36,7 +36,7 @@
   height: auto;
 
   overflow-y: auto;
-  max-height: 90vh;
+  /* max-height: 90vh; */
 
   display: flex;
   flex-direction: column;
@@ -100,4 +100,30 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 1.5;
+}
+
+body.modal-open {
+  overflow: hidden;
+}
+
+@media only screen and (min-width: 768px) {
+  .modal-overlay {
+    padding: 32px;
+  }
+
+  .modal {
+    max-width: 704px;
+    padding: 64px 32px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .modal-overlay {
+    padding: 32px;
+  }
+
+  .modal {
+    max-width: 704px;
+    padding: 64px;
+  }
 }
