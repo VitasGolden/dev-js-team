@@ -7,17 +7,31 @@
     </button>
     <div class="modal-content-container">
       <h2 class="modal-title">Thank You for Your Inquiry!</h2>
-      <img
-        class="modal-img"
-        srcset="
-          /images/modal-success-mobile@1.png 1x,
-          /images/modal-success-mobile@2.png 2x
-        "
-        src="/images/modal-success-mobile@1.png"
-        alt="Beginner Yoga"
-        width="422"
-        height="240"
-      />
+      <picture>
+        <source
+          media="(min-width: 1440px)"
+          srcset="
+            /images/modal-success-desktop-x1.webp 1x,
+            /images/modal-success-desktop-x2.webp 2x
+          "
+        />
+        <source
+          media="(min-width: 768px)"
+          srcset="
+            /images/modal-success-tablet-x1.webp 1x,
+            /images/modal-success-tablet-x2.webp 2x
+          "
+        />
+        <img
+          class="modal-img"
+          src="/images/modal-success-mobile-x1.webp"
+          srcset="
+            /images/modal-success-mobile-x1.webp 1x,
+            /images/modal-success-mobile-x2.webp 2x
+          "
+          alt="..."
+        />
+      </picture>
       <p class="modal-content">
         I have received your message and I'm so excited about your interest! I
         will get in touch with you within 24-48 hours to discuss the details of
