@@ -11,5 +11,5 @@ import{i as e,n as t,r as n,t as r}from"./assets/vendor-B77a18gK.js";(function()
             type="button"
             aria-label="Go to feedback ${e+1}"
           ></button>
-        `}},watchOverflow:!0,on:{init(){i(this)},slideChange(){i(this)},lock(){i(this)},unlock(){i(this)}}});function i(e){f.disabled=e.isBeginning||e.isLocked,p.disabled=e.isEnd||e.isLocked}}
+        `}},watchOverflow:!0,on:{init(){i(this)},slideChange(){i(this)},lock(){i(this)},unlock(){i(this)}}});function i(e){f.disabled=e.isBeginning||e.isLocked,p.disabled=e.isEnd||e.isLocked}}document.addEventListener(`DOMContentLoaded`,()=>{let e=document.querySelectorAll(`.faq-item`);e.forEach(t=>{let n=t.querySelector(`.faq-question`);n.addEventListener(`click`,()=>{let r=t.classList.contains(`active`);e.forEach(e=>{e.classList.remove(`active`),e.querySelector(`.faq-question`).setAttribute(`aria-expanded`,`false`)}),r||(t.classList.add(`active`),n.setAttribute(`aria-expanded`,`true`))})})});
 //# sourceMappingURL=index.js.map
