@@ -16,6 +16,10 @@
 @import url('./icons.css');
 @import url('./header.css');
 @import url('./benefits.css');
+<<<<<<< HEAD
 @import url('./footer.css');
 @import url('./faq.css');
 @import url('./feedbacks.css');
+=======
+@import url('./mobile-menu.css');
+>>>>>>> 8ea4e71 (add mobile menu markup and styles and fix hover in header)
