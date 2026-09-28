@@ -18,14 +18,13 @@
       href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300..700;1,300..700&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
       rel="stylesheet"
     />
-    <script type="module" crossorigin src="/dev-js-team/index.js"></script>
-    <link rel="modulepreload" crossorigin href="/dev-js-team/assets/rolldown-runtime-hePW80VL.js">
-    <link rel="modulepreload" crossorigin href="/dev-js-team/assets/vendor-BT2DXJVw.js">
+    <script type="module" crossorigin src="/dev-js-team/assets/rolldown-runtime-hePW80VL.js"></script>
+    <script type="module" crossorigin src="/dev-js-team/assets/vendor-B5_DBbJT.js"></script>
+    <script type="module" crossorigin src="/dev-js-team/assets/main-C3R0oHV3.js"></script>
     <link rel="stylesheet" crossorigin href="/dev-js-team/assets/vendor-DrkvBYAV.css">
-    <link rel="stylesheet" crossorigin href="/dev-js-team/assets/index-DChjUCcR.css">
+    <link rel="stylesheet" crossorigin href="/dev-js-team/assets/main-WzsVIHZw.css">
   </head>
   <body>
-    <span class="loader is-hidden"></span>
     <header id="header" class="header">
   <div class="container">
     <a
@@ -243,7 +242,27 @@
   </div>
 </section>
 
-      
+      <section class="portfolio" id="portfolio">
+  <div class="container">
+    <div class="portfolio__header">
+      <svg class="icon icon-divider">
+        <use href="/dev-js-team/assets/sprite-BkkTkQRm.svg#icon-divider"></use>
+      </svg>
+      <h2 class="portfolio__title">Portfolio Highlights</h2>
+    </div>
+
+    <div
+      class="portfolio__filters"
+      role="group"
+      aria-label="Portfolio filters"
+    ></div>
+
+    <ul class="portfolio__gallery"></ul>
+
+    <button type="button" class="portfolio__more">Show More</button>
+  </div>
+</section>
+
       <section class="faq">
   <div class="container">
     <div class="faq-content">
@@ -444,7 +463,6 @@
     </main>
 
     
-
     <div class="mob-menu-overlay" id="mob-menu">
   <div class="mob-menu container">
     <div class="mob-menu-header">
@@ -488,6 +506,10 @@
   </div>
 </div>
 
+
+    <div class="loader-backdrop is-hidden">
+      <span class="loader"></span>
+    </div>
     <div class="modal-overlay" id="modal-succsess">
   <div class="modal container">
     <button class="modal-close-btn" type="button" data-modal-close>
