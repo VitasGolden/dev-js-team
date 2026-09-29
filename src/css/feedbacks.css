@@ -48,13 +48,14 @@
 .feedbacks-card {
   width: 100%;
   height: 100%;
-  max-height: 328px;
+  /* max-height: 328px; */
+  min-height: 390px;
   padding: 32px;
   border: 2px solid #000000;
   border-radius: 16px;
   background-color: #faf7e6;
   display: flex;
-  gap: 24px;
+  /* gap: 24px; */
   flex-direction: column;
 }
 
@@ -76,6 +77,8 @@
   font-weight: 600;
   font-size: 16px;
   line-height: 150%;
+
+  margin-top: auto;
 }
 
 .feedbacks-bottom {
@@ -182,9 +185,18 @@
 
 /* ================================================================ */
 
+@media only screen and (min-width: 375px) {
+  .feedbacks-card {
+    min-height: 310px;
+    padding: 20px;
+  }
+}
+
+/* ================================================================ */
+
 @media only screen and (min-width: 768px) {
   .feedbacks-card {
-    max-height: 412px;
+    min-height: 412px;
     padding: 20px;
   }
 }
@@ -193,7 +205,7 @@
 
 @media only screen and (min-width: 1440px) {
   .feedbacks-card {
-    max-height: 275px;
+    min-height: 275px;
     padding: 32px;
   }
 }
