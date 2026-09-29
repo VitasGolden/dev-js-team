@@ -9,12 +9,12 @@ mobile menu, dynamic portfolio filtering, and a functional feedback slider
 integrated with an external API.
 
 🧰 **Technologies** HTML5 • CSS3 • JavaScript • Vite • Git • GitHub • GitHub
-Pages • Axios • SwiperJS • modern-normalize
+Pages • Axios • SwiperJS • modern-normalize • IziToast • Accordion
 
 👥 **Teamwork** The project was developed collaboratively using Git and GitHub.
 We worked with branches, resolved merge conflicts, and integrated code via pull
 requests as part of the team development workflow, alongside task planning and
-management using Trello.
+management using GitHub Projects.
 
 🌐 **Live Demo**
 [https://vitasgolden.github.io/dev-js-team/](https://vitasgolden.github.io/dev-js-team/)
