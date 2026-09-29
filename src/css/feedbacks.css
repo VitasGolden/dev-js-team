@@ -1,56 +1,35 @@
 .feedbacks {
-  color: #111;
-  overflow: hidden;
   padding: 64px 0;
 }
 
-.feedbacks-decor {
-  margin: 0 auto 24px;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.feedbacks-decor-icon {
-  width: 300px;
-  height: 21px;
-
-  fill: currentColor;
-  stroke: currentColor;
-}
-
 .feedbacks-title {
-  max-width: 340px;
-
-  margin: 0 auto;
-
+  /* max-width: 340px; */
   text-align: center;
+  font-family: var(--font-title);
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 1.2em;
+  letter-spacing: -0.01em;
+}
 
-  font-family: Georgia, 'Times New Roman', serif;
-  font-size: 30px;
-  font-weight: 400;
-  line-height: 1.2;
+.feedbacks-title-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 40px;
 }
 
 .feedbacks-description {
-  max-width: 350px;
-
-  margin: 24px auto 40px;
-
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
   text-align: center;
-
-  font-size: 16px;
-  line-height: 1.5;
 }
 
 .feedbacks-slider {
   width: 100%;
-
   overflow: hidden;
-
   cursor: grab;
-
   touch-action: pan-y;
 }
 
@@ -60,59 +39,49 @@
 
 .feedbacks-list {
   display: flex;
-
   width: 100%;
-
   margin: 0;
   padding: 0;
-
   list-style: none;
-
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.feedbacks-list.is-dragging {
-  transition: none;
-}
-
-.feedbacks-item {
-  flex: 0 0 100%;
-
-  padding: 0 5px;
 }
 
 .feedbacks-card {
-  min-height: 365px;
-
-  padding: 38px 34px 28px;
-
-  border: 2px solid #111;
-  border-radius: 17px;
-
-  background-color: #faf8ef;
-
+  width: 100%;
+  height: 100%;
+  max-height: 328px;
+  padding: 32px;
+  border: 2px solid #000000;
+  border-radius: 16px;
+  background-color: #faf7e6;
   display: flex;
+  gap: 24px;
   flex-direction: column;
 }
 
 .feedbacks-text {
   margin: 0;
-
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.5;
+  font-weight: 400;
+
+  /* overflow-y: auto;
+  scrollbar-width: none; */
 }
 
-.feedbacks-author {
-  margin: auto 0 0;
-  padding-top: 30px;
+/* .feedbacks-text::-webkit-scrollbar {
+  display: none;
+} */
 
-  font-size: 14px;
+.feedbacks-author {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 150%;
 }
 
 .feedbacks-bottom {
   width: 100%;
 
-  margin-top: 36px;
+  margin-top: 32px;
 
   display: flex;
   align-items: center;
@@ -213,151 +182,18 @@
 
 /* ================================================================ */
 
-@media only screen and (min-width: 375px) {
-  .feedbacks-decor {
-    margin-bottom: 25px;
-  }
-
-  .feedbacks-title {
-    max-width: 330px;
-
-    font-size: 30px;
-  }
-
-  .feedbacks-description {
-    max-width: 330px;
-
-    margin-top: 26px;
-    margin-bottom: 48px;
-
-    font-size: 16px;
-    line-height: 1.5;
-  }
-
-  .feedbacks-item {
-    padding: 0 4px;
-  }
-
-  .feedbacks-card {
-    min-height: 365px;
-
-    padding: 38px 34px 28px;
-  }
-
-  .feedbacks-text {
-    font-size: 16px;
-    line-height: 1.5;
-  }
-
-  .feedbacks-author {
-    font-size: 14px;
-  }
-
-  .feedbacks-bottom {
-    margin-top: 36px;
-  }
-}
-
-/* ================================================================ */
-
 @media only screen and (min-width: 768px) {
-  .feedbacks-decor {
-    margin-bottom: 27px;
-  }
-
-  .feedbacks-title {
-    max-width: none;
-
-    font-size: 32px;
-    line-height: 1.2;
-  }
-
-  .feedbacks-description {
-    max-width: 650px;
-
-    margin-top: 25px;
-    margin-bottom: 47px;
-
-    font-size: 16px;
-    line-height: 1.45;
-  }
-
-  .feedbacks-item {
-    flex: 0 0 33.333333%;
-
-    padding: 0 13px;
-  }
-
   .feedbacks-card {
-    min-height: 458px;
-
-    padding: 24px 20px 20px;
-
-    border-radius: 17px;
-  }
-
-  .feedbacks-text {
-    font-size: 16px;
-    line-height: 1.48;
-  }
-
-  .feedbacks-author {
-    padding-top: 20px;
-
-    font-size: 14px;
-  }
-
-  .feedbacks-bottom {
-    margin-top: 36px;
+    max-height: 412px;
+    padding: 20px;
   }
 }
 
 /* ================================================================ */
 
 @media only screen and (min-width: 1440px) {
-  .feedbacks-decor {
-    margin-bottom: 32px;
-  }
-
-  .feedbacks-title {
-    font-size: 48px;
-    line-height: 1.15;
-  }
-
-  .feedbacks-description {
-    max-width: 850px;
-
-    margin-top: 30px;
-    margin-bottom: 48px;
-
-    font-size: 18px;
-    line-height: 1.45;
-  }
-
-  .feedbacks-item {
-    padding: 0 13px;
-  }
-
   .feedbacks-card {
-    min-height: 305px;
-
-    padding: 36px 34px 28px;
-
-    border-radius: 17px;
-  }
-
-  .feedbacks-text {
-    font-size: 16px;
-    line-height: 1.5;
-  }
-
-  .feedbacks-author {
-    padding-top: 25px;
-
-    font-size: 14px;
-  }
-
-  .feedbacks-bottom {
-    margin-top: 36px;
+    max-height: 275px;
+    padding: 32px;
   }
 }
