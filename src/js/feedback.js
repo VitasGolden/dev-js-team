@@ -1,14 +1,13 @@
 import axios from 'axios';
 import Swiper from 'swiper';
-import { Navigation, Keyboard } from 'swiper/modules';
+import { Navigation, Keyboard, Pagination } from 'swiper/modules';
 import 'swiper/css';
 
 const feedbacksList = document.querySelector('.feedbacks-list');
 const prevButton = document.querySelector('.feedbacks-button-prev');
 const nextButton = document.querySelector('.feedbacks-button-next');
 
-const API_URL =
-  'https://wedding-photographer.b.goit.study/api/feedbacks';
+const API_URL = 'https://wedding-photographer.b.goit.study/api/feedbacks';
 
 async function getFeedbacks() {
   try {
@@ -16,7 +15,7 @@ async function getFeedbacks() {
 
     const feedbacks = Array.isArray(data)
       ? data
-      : data.feedbacks ?? data.items ?? [];
+      : (data.feedbacks ?? data.items ?? []);
 
     renderFeedbacks(feedbacks);
     initSwiper();
@@ -47,10 +46,10 @@ function renderFeedbacks(feedbacks) {
 
 function initSwiper() {
   new Swiper('.feedbacks-slider', {
-    modules: [Navigation, Keyboard],
+    modules: [Navigation, Keyboard, Pagination],
 
     slidesPerView: 1,
-
+    spaceBetween: 16,
     navigation: {
       prevEl: prevButton,
       nextEl: nextButton,
@@ -61,9 +60,17 @@ function initSwiper() {
       onlyInViewport: true,
     },
 
+    pagination: {
+      el: '.feedbacks-dots',
+      clickable: true,
+      bulletClass: 'feedbacks-dot',
+      bulletActiveClass: 'is-active',
+    },
+
     breakpoints: {
       768: {
         slidesPerView: 3,
+        spaceBetween: 24,
       },
     },
   });
