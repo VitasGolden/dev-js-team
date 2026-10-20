@@ -29,6 +29,7 @@
 }
 
 .portfolio__filter {
+  color: #000000;
   background: transparent;
   border: 2px solid transparent;
   border-radius: 4px;
@@ -39,8 +40,7 @@
   cursor: pointer;
   transition:
     background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .portfolio__filter:hover,
@@ -51,7 +51,7 @@
 
 .portfolio__filter.is-active {
   border-color: #111;
-  background: #fff;
+  background-color: #fff;
 }
 
 .portfolio__gallery {

@@ -54,6 +54,7 @@
   font-size: 18px;
   line-height: 1.5;
   text-align: left;
+  color: #000000;
 }
 
 .faq-question .faq-icon {
@@ -72,6 +73,7 @@
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
+  color: #000000;
 }
 
 .ac.is-active .faq-icon {
